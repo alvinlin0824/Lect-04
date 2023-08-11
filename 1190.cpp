@@ -9,22 +9,25 @@
 // 6.only white-space
 // 7.none of the above
 
-#include<stdio.h> 
+#include<iostream>
+#include<string>
+using namespace std;
+
 int main() {
     // string with whitespace
-    char S1[129];
-    char S2[129];
-    gets(S1);
+    string str;
+    string S2;
+    cin >> str;
     
     // uppercase
-    for (int i = 0; S1[i]!='\0'; i++)
+    for (int i = 0; str[i]!='\0'; i++)
      {  
-        if (S1[i] >= 'A' && S1[i] <= 'Z')
+        if (str[i] >= 'A' && str[i] <= 'Z')
         {
-            S2[i] = S1[i] + 32;
+            S2[i] = str[i] + 32;
         }
      }
-     printf("%s is a uppercase string.\nswap to lowercase string %s.",S1,S2);
+     cout << str << " is a uppercase string." << endl << "swap to lowercase string" << S2;
     
     // lowercase
     // for (int i = 0; S1[i]!='\0'; i++)
