@@ -14,7 +14,7 @@ int main(){
     cin >> str;
     
      if (("a" <= str && str <= "z") || ("A" <= str && str <= "Z")){
-         cout << "is not a number"; 
+         cout << "is not a number"<< endl; 
          is_number = 0;  
      }
      else {
@@ -22,10 +22,7 @@ int main(){
         is_number = 1;
      } 
          
-    } while (is_number = 0);
+    } while (is_number == 0);
 
-    
-     
-        //  else cout << "n=" << str;
     return 0;
 }
