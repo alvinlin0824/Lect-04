@@ -19,9 +19,9 @@ int main() {
     char s1[100], s2[100];
     int i, j, len1, len2;
 
-    printf("Enter string S1: ");
+    // printf("Enter string S1: ");
     fgets(s1, 100, stdin);
-    printf("Enter string S2: ");
+    // printf("Enter string S2: ");
     fgets(s2, 100, stdin);
 
     len1 = strlen(s1);
@@ -44,7 +44,7 @@ int main() {
             }
         }
         if (j == len2) {
-            printf("Match found at position %d\n", i);
+            printf("%d\n", i);
         }
     }
 
